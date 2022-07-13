@@ -1,2 +1,44 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        maven {
+            credentials {
+                username "$mavenUser"
+                password "$mavenPassword"
+            }
+            url 'https://fagg-maven.pkg.coding.net/repository/fagougouatgovernment/androidteam/'
+        }
+        google()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://repo.huaweicloud.com/repository/maven' }
+        maven { url "https://raw.githubusercontents.com/7moor-tech/video-call-sdk/master" }
+        maven { url 'https://repo1.maven.org/maven2/' }
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven {
+            credentials {
+                username "$mavenUser"
+                password "$mavenPassword"
+            }
+            url 'https://fagg-maven.pkg.coding.net/repository/fagougouatgovernment/androidteam/'
+        }
+        google()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://repo.huaweicloud.com/repository/maven' }
+        maven { url "https://raw.githubusercontents.com/7moor-tech/video-call-sdk/master" }
+        maven { url 'https://repo1.maven.org/maven2/' }
+    }
+}
+
 rootProject.name='Frpc_Android'
 include ':app'

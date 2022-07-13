@@ -11,25 +11,19 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.IBinder;
 import android.text.TextUtils;
-import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 import androidx.lifecycle.Observer;
-import androidx.room.util.StringUtil;
 
 import com.car.frpc_android.database.AppDatabase;
 import com.car.frpc_android.database.Config;
 import com.car.frpc_android.ui.HomeFragment;
 import com.car.frpc_android.ui.MainActivity;
-import com.google.gson.Gson;
 import com.jeremyliao.liveeventbus.LiveEventBus;
 
-import java.util.List;
-
 import frpclib.Frpclib;
-import io.reactivex.Observable;
 import io.reactivex.Single;
 import io.reactivex.SingleObserver;
 import io.reactivex.SingleSource;

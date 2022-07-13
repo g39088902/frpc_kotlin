@@ -33,12 +33,9 @@ import me.zhanghai.android.materialprogressbar.MaterialProgressBar;
 
 public class FileListAdapter extends BaseQuickAdapter<Config, BaseViewHolder> {
 
-
     public FileListAdapter() {
         super(R.layout.item_recycler_main);
     }
-
-
 
     @Override
     protected void convert(@NotNull BaseViewHolder baseViewHolder, Config file) {
@@ -46,11 +43,5 @@ public class FileListAdapter extends BaseQuickAdapter<Config, BaseViewHolder> {
         boolean running =(file.getConnecting() != null && file.getConnecting())|| Frpclib.isRunning(file.getUid());
         baseViewHolder.setImageResource(R.id.iv_play, running ? R.drawable.ic_stop_white : R.drawable.ic_play_white);
         ImageViewCompat.setImageTintList(baseViewHolder.getView(R.id.iv_play), ColorStateList.valueOf(getContext().getResources().getColor(running ? R.color.colorStop : R.color.black)));
-
-
-
-
     }
-
-
 }
